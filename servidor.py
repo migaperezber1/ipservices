@@ -10,10 +10,11 @@ while True:
      if recibido == "quit":
        break
      print ("Recibido:", recibido)
-     sc.send(recibido)
+    
+     mensaje = raw_input("> ")
+     sc.send(mensaje)
 
 print("chao")
 
 sc.close()
-s.close()
 
