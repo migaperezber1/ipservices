@@ -10,9 +10,9 @@ s.connect(("192.168.0.29", 4444))
 while True:
    mensaje = raw_input("> ")
    s.send(mensaje)
+   recibido = s.recv(1024)
+   print (recibido)
    if mensaje == "quit":
      break
 
 print "adios"
-
-s.close()
